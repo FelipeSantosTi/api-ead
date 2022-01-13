@@ -16,7 +16,7 @@ class ModuleResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
+            'name' => ucwords(strtolower($this->name)),
         ];
     }
 }
