@@ -20,8 +20,8 @@ class Lesson extends Model
         'video'
     ];
 
-    public function course()
+    public function supports()
     {
-        return $this->belongsTo(Course::class);
+        return $this->hasMany(Support::class);
     }
 }
